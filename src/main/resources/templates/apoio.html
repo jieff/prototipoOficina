@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8" />
+<title>Cadastro de Clientes</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
+</head>
+<body>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">OFICINA CHAVE DE RODAS</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/index"> <span
+							class="glyphicon glyphicon-home"> Home |</span>
+					</a></li>
+					<li><a href="/pedidos">
+							<span class="glyphicon glyphicon-search"> Pedidos |</span>
+					</a></li>
+					<li><a href="/clientes">
+							<span class="glyphicon glyphicon-pencil"> Clientes |</span></a></li>
+					<li><a href="/index2"><span class="glyphicon glyphicon-book">ADS</span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://localhost:8080/index">Bemvindo, Jieff
+							Cavalcanti</a></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+	<br />
+	<br />
+	<div class="text-top">
+		<h2>Estudo de Caso: Controle de Ordem de Serviços e Reparos
+			Automotivos</h2>
+
+		<div class="disciplina">
+			<h4>Disciplinas:</h4>
+			<p>
+				Engenharia e Projeto de Software<br /> Projeto Orientado a Objetos<br />
+				Programação para web II<br /> Seminários V
+			</p>
+		</div>
+
+		<h3>Oficina: Chave de Rodas</h3>
+		<h4>Especialidades: Motor, Suspensão, Freio e Elétrica</h4>
+		<p>Os Serviços realizados podem ter um desconto de acordo com o
+			valor final dos serviços e o pagamento ser parcelado em até 3 vezes
+			também.</p>
+
+		<h3>Tabelas de Referência</h3>
+		<br />
+
+	</div>
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Tabela de Mão-de-Obra</h3>
+		</div>
+		<div class="panel-body">
+
+			<table class="table table-striped" border="1">
+				<tr>
+					<td>Código</td>
+					<td>Descrição</td>
+					<td>Preço/hora</td>
+				</tr>
+
+				<tr>
+					<td>1M</td>
+					<td>Motor</td>
+					<td>100,00</td>
+				</tr>
+				<tr>
+					<td>2S</td>
+					<td>Suspenção</td>
+					<td>200,00</td>
+				</tr>
+				<tr>
+					<td>3F</td>
+					<td>Freio</td>
+					<td>300,00</td>
+				</tr>
+				<tr>
+					<td>4E</td>
+					<td>Parte Elétrica</td>
+					<td>150,00</td>
+				</tr>
+				<tr>
+					<td>5I</td>
+					<td>Parte Eletrônica (i)</td>
+					<td>350,00</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Tabela de Política de Descontos</h3>
+		</div>
+		<div class="panel-body">
+			<table class="table table-striped" border="1">
+				<tr>
+					<td>Preço Total</td>
+					<td>Desconto</td>
+				</tr>
+				<tr>
+					<td>De R$200,00 a R$ 1.000,00</td>
+					<td>5%</td>
+				</tr>
+				<tr>
+					<td>Superior a R$ 1.000,00</td>
+					<td>10%</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">ORIENTAÇÕES PARA EXECUÇÃO DO TRABALHO</h3>
+		</div>
+		<div class="panel-body">
+
+
+
+			<p>Trabalha com agendamento de serviços</p>
+
+
+			<ol>
+				<li>Cadastro de clientes</li>
+				<li>Cadastro dos Carros</li>
+				<li>Ordens de Serviços</li>
+				<li>Funcionários</li>
+				<li>Especialidades</li>
+				<li>Processo de abertura de ordem de serviço</li>
+				<li>alteração e fechamento da ordem de serviço</li>
+			</ol>
+
+
+			<ul>
+				<li>Tarefa 01:</li>
+			</ul>
+
+			<p>Elaborar modelagem de análise do sistema em uma ferramenta
+				case:</p>
+			<ol>
+				<li>Diagrama de caso de uso</li>
+				<li>Diagrama de classe(atributos e operações)</li>
+			</ol>
+
+
+			<ul>
+				<li>Tarefa 02:</li>
+			</ul>
+
+			<ol>
+				<li>Identifique as entidades</li>
+				<li>Atributos</li>
+				<li>Relacionamentos com cardinalidades(br modelo)</li>
+				<li>Criar modelos conceituais e lógico</li>
+				<li>DER normalizado até a 4 Forma Normal</li>
+			</ol>
+
+
+			<ul>
+				<li>Tarefa 03:</li>
+			</ul>
+
+			<ol>
+				<li>desenvolva paginas web para:</li>
+				<li>cadastro de clientes</li>
+				<li>cadastro de produto</li>
+				<li>Controle de pedido do sistema</li>
+				<li>O controle de pedidos deve respeitar as regras de
+					relacionamentos</li>
+				<li>identificadas na modelagem de banco de dados.</li>
+			</ol>
+
+			<ul>
+				<li>Tarefa 04:</li>
+			</ul>
+
+			<ol>
+				<li>Escopo do Projeto</li>
+				<li>Justificativa</li>
+				<li>Mapa Mental</li>
+				<li>Mapa de Requisitos Funcionais e Não Funcionais</li>
+				<li>Cronograma de Execução</li>
+				<li>Definição de ciclo de vida e metodologia de desenvolvimento</li>
+				<li>Padrões de Projeto</li>
+				<li>Frameworks</li>
+				<li>Tecnologias Aplicadas</li>
+				<li>Ferramentas</li>
+			</ol>
+
+			<ul>
+				<li>Tarefa 05:</li>
+			</ul>
+
+			<ol>
+				<li>pesquisar sobre melhores praticas de gerenciamento de
+					projetos, com foco em desenvolvimento de escopo, tempo e qualidade</li>
+				<li>Elaborar um plano de sesenvolvimento, comtemplano as
+					técnicas de gerenciamento do escopo, do gerenciamento do tempo e
+					qualidade</li>
+				<li>Apresentar o conceito e as vantagens em praticar o
+					gerenciamento do escopo, inclusive o diagrama da estrutura
+					analitica do projeto (EAP) do projeto Chave de Rodas</li>
+				<li>Desenvolver um texto que explane o objetivo da utilização
+					da prática do gerenciamento do tempo, juntamente com a lista de
+					atividades e do cronograma (diagrama de gantt) para o Projeto Chave
+					de Rodas</li>
+				<li>Descrver um plano de qualidade, baseado nas melhores
+					práticas do gerenciamento da qualidade para o projeto chave de
+					rodas de acordo com padrão de qualidade ou modelo de maturidade no
+					processo de desenvolvimento de software.</li>
+				<li>Demostrar a utilização do modelo BPR nas três
+					atividades(escopo, tempo e qualidade), descrevendo as necessidades
+					e a importância desta prática para manter o processo do negócio da
+					organização em funcionamento.</li>
+			</ol>
+
+
+
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">ORIENTAÇÕES PARA FORMATAÇÃO DO TRABALHO</h3>
+		</div>
+		<div class="panel-body">
+			<ol>
+				<li>O texto deve estar de acordo com o estabelecido nas normas
+					ABNT para construção de documento textual;</li>
+				<li>É sugerida a leitura de todo material disponibilizado no
+					ambiente virtual para melhor compreensão dos conceitos pesquisados,
+					assim como, das bibliografias citadas nas disciplinas;</li>
+				<li>Lembre-se que seu tutor eletrônico está a disposição para
+					sanar as possíveis dúvidas;</li>
+				<li>Acessem a sala do tutor e fóruns;</li>
+				<li>Atenção para o prazo de envio da atividade.</li>
+			</ol>
+		</div>
+	</div>
+
+
+	<script src="/js/jquery-3.3.7.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

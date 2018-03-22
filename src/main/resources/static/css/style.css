@@ -1,0 +1,75 @@
+.panel-default{
+	
+	margin-top: 80px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.e-link-panel{
+	text-align: right;
+}
+
+.nav-pagination{
+	padding-left: 500px;	
+}
+
+.text-top{
+	
+	margin-top: 20px;
+	text-align: center;
+}
+
+.panel-title{ 
+	margin-top:10px;
+}
+.disciplina{
+	text-align: center;
+}
+
+
+h2{
+	 text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+
+.table-striped{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	
+}
+
+p, h4{
+	text-align: center;
+}
+
+
+.e-link-panel{
+	
+	float: left;
+	padding: 0px;
+}
+
+.e-titulo-panel{
+	float: left;
+	padding-top: 2px;
+}
+
+.p-docs{
+	
+	text-align: left;
+}
+
+.jumbotron{
+	
+	padding-top: 50px;
+	margin-top: 80px;
+}
+
+
+
+
+

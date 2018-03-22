@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8" />
+<title>base</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+
+
+
+	<!-- Chama minha página cabeçalho -->
+	<header layout:include="cabecalho"></header> 
+	
+	<br/><br/><br/>
+
+	<!-- Chama minha navtabs  -->
+	<header layout:include="navtabs"></header>
+	
+	<section layout:fragment="table">
+		<p>Conteúdo principal</p>
+	</section>
+
+	<!--  -->
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/horario.js"></script>
+</body>
+</html>
